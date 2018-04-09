@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ui_gradient">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="80dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    <EditText
+        android:id="@+id/main_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:inputType="text"
+        android:hint="UserName"
+        android:textColor="@android:color/black"
+        android:textColorHint="#999999"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/main_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_username"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Email"
+        android:textColor="@android:color/black"
+        android:textColorHint="#999999"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/main_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_email"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:layout_margin="16dp"
+        android:inputType="textLongMessage|textMultiLine"
+        android:hint="Write about yourself"
+        android:textColor="@android:color/black"
+        android:textColorHint="#999999"/>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_corners"
+        android:textColor="@android:color/white"
+        android:text="Next"/>
+
+
+</RelativeLayout>
